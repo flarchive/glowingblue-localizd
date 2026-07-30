@@ -1,0 +1,121 @@
+{
+    "name": "glowingblue/localizd",
+    "description": "Makes Flarum a truly multi-lingual forum platform",
+    "license": "MIT",
+    "type": "flarum-extension",
+    "abandoned": true,
+    "keywords": [
+        "flarum",
+        "localizd",
+        "translations",
+        "multi-lingual",
+        "multi-language",
+        "multilingual",
+        "multilanguage",
+        "glowingblue",
+        "translate",
+        "languages",
+        "linguist"
+    ],
+    "authors": [
+        {
+            "name": "Glowing Blue AG",
+            "email": "dev@glowingblue.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://glowingblue.com",
+    "support": {
+        "email": "dev@glowingblue.com",
+        "forum": "https://community.glowingblue.com/t/flarum-corner"
+    },
+    "require": {
+        "PHP": "^7.4 || >= 8.0",
+        "flarum/core": "^1.8.7",
+        "fof/linguist": "*",
+        "symfony/yaml": "*"
+    },
+    "require-dev": {
+        "flamarkt/backoffice": "*",
+        "flamarkt/taxonomies": "*",
+        "flarum/flags": "*",
+        "flarum/phpstan": "*",
+        "flarum/tags": "*",
+        "flarum/testing": "^1.0.0",
+        "fof/cookie-consent": "*",
+        "fof/html-errors": "*",
+        "fof/linguist": "*",
+        "fof/links": "1.4.0-beta.1",
+        "fof/masquerade": "^2.1.5",
+        "fof/reactions": "*",
+        "fof/terms": "*",
+        "v17development/flarum-seo": "*",
+        "fof/seo": "*"
+    },
+    "conflict": {
+        "fof/pretty-mail": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "GlowingBlue\\Localizd\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GlowingBlue\\Localizd\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org/d/30487"
+        },
+        "flarum-cli": {
+            "modules": {
+                "backendTesting": true,
+                "githubActions": true
+            }
+        },
+        "flarum-extension": {
+            "title": "GB Localizd",
+            "category": "language",
+            "icon": {
+                "backgroundColor": "#00a7e3",
+                "color": "#fff",
+                "name": "fas fa-language"
+            },
+            "optional-dependencies": [
+                "flamarkt/backoffice",
+                "flamarkt/taxonomies",
+                "flarum/flags",
+                "flarum/tags",
+                "fof/cookie-consent",
+                "fof/linguist",
+                "fof/links",
+                "fof/seo",
+                "fof/reactions",
+                "fof/terms",
+                "fof/masquerade",
+                "v17development/flarum-seo",
+                "fof/html-errors"
+            ]
+        }
+    },
+    "scripts": {
+        "analyse:phpstan": "phpstan analyse",
+        "clear-cache:phpstan": "phpstan clear-result-cache",
+        "test": [
+            "@test:unit",
+            "@test:integration"
+        ],
+        "test:integration": "phpunit -c tests/phpunit.integration.xml",
+        "test:setup": "@php tests/integration/setup.php",
+        "test:unit": "phpunit -c tests/phpunit.unit.xml"
+    },
+    "scripts-descriptions": {
+        "analyse:phpstan": "Run static analysis",
+        "test": "Runs all tests.",
+        "test:integration": "Runs all integration tests.",
+        "test:setup": "Sets up a database for use with integration tests. Execute this only once.",
+        "test:unit": "Runs all unit tests."
+    }
+}

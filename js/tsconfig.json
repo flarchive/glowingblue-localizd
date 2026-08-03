@@ -1,0 +1,16 @@
+{
+  "extends": "flarum-tsconfig",
+  "include": ["src/**/*", "../vendor/*/*/js/dist-typings/@types/**/*", "@types/**/*"],
+  "compilerOptions": {
+    "declarationDir": "./dist-typings",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": ".",
+    "paths": {
+      "flarum/*": ["../vendor/flarum/core/js/dist-typings/*"],
+      "@flarum/core/*": ["../vendor/flarum/core/js/dist-typings/*"],
+      "@fof-linguist": ["../vendor/fof/linguist/js/dist-typings/index.d.ts"],
+      "@fof-linguist/*": ["../vendor/fof/linguist/js/dist-typings/*"],
+    }
+  }
+}

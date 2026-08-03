@@ -1,0 +1,8 @@
+glowingblue-localizd:
+  forum:
+    errors:
+      causes: Dies könnte aus einem oder mehreren der folgenden Gründe sein
+      does_not_exist: Die Seite existiert nicht
+      deleted: Die Seite wurde gelöscht
+      logged_in_only: Die Seite ist nur für angemeldete Benutzer verfügbar
+      no_permission: Sie haben keine Berechtigung, diese Seite anzuzeigen

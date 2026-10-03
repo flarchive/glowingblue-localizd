@@ -2,13 +2,15 @@
 
 > **Read-only archive of released versions of glowingblue/localizd.** Not for installation: use [Packagist](https://packagist.org/packages/glowingblue/localizd) or the [upstream repository](https://github.com/glowingblue/flarum-ext-localizd).
 
-**0** versions archived · Latest: [`1.11.5`](https://github.com/flarchive/glowingblue-localizd/tree/archive/v1.11.5) · License: `MIT` · Flarum: `^1.8.7`
+**3** versions archived · Latest: [`1.11.5`](https://github.com/flarchive/glowingblue-localizd/tree/archive/v1.11.5) · License: `MIT` · Flarum: `^1.8.7`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `1.11.3` | 2026-07-13 | `^1.8.7` | [Browse](https://github.com/flarchive/glowingblue-localizd/tree/archive/v1.11.3) |
+| `1.11.4` | 2026-07-30 | `^1.8.7` | [Browse](https://github.com/flarchive/glowingblue-localizd/tree/archive/v1.11.4) |
+| `1.11.5` | 2026-08-03 | `^1.8.7` | [Browse](https://github.com/flarchive/glowingblue-localizd/tree/archive/v1.11.5) |
 
 Catalog entry: [packages/glowingblue-localizd.json](https://github.com/flarchive/archive-index/blob/main/packages/glowingblue-localizd.json)
 
